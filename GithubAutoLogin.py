@@ -27,7 +27,7 @@ def Main():
 	passElement.submit()
 	time.sleep(5)
 	browser.get("https://github.com/search?utf8")#Code will redirect to 'search page'
-	searchElement = browser.find_element_by_name("q")
+	searchElement = browser.find_element_by_name("q")#Type inside "" if you have more than one word in the args to avoid error while running
 	searchElement.send_keys(args.search)
 	searchElement.submit()
 
